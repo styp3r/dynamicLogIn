@@ -32,6 +32,7 @@ body{
   border-style: solid;
   border-radius: 5px;
   outline: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .emailInput:focus{
@@ -50,6 +51,7 @@ body{
   border-style: solid;
   border-radius: 5px;
   outline: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .passwordInput:focus{
@@ -67,10 +69,18 @@ body{
   background-color: #353C44;
   border-style: none;
   border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logInButton:focus{
+  border: solid rgba(102, 179, 255, 0.1);
+  border-width: medium;
 }
 
 .logInButton:hover{
   cursor: pointer;
+  transition-duration: 0.4s;
+  background-color: #3399ff;
 }
 
 .waveAnimation1{
