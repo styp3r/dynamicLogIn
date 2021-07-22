@@ -6,22 +6,24 @@ body{
 }
 
 .bg{
-  position: absolute;
+  position: relative;
   display: flex;
   align-content: center;
   justify-content: center;
-  top: 20%;
+  z-index: 2;
+  margin-top: 10%;
   width: 300px;
   height: 400px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 15px grey;
+  overflow-y: hidden;
 }
 
 .emailInput{
   position: absolute;
   padding-left: 10px;
   display: block;
+  z-index: 3;
   width: 80%;
   height: 40px;
   top: 10%;
@@ -38,6 +40,7 @@ body{
 .passwordInput{
   position: absolute;
   display: block;
+  z-index: 4;
   padding-left: 10px;
   width: 80%;
   height: 40px;
@@ -55,6 +58,7 @@ body{
 .logInButton{
   position: absolute;
   display: block;
+  z-index: 4;
   width: 85%;
   height: 40px;
   top: 60%;
@@ -66,4 +70,77 @@ body{
 
 .logInButton:hover{
   cursor: pointer;
+}
+
+.waveAnimation1{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-right: 310px;
+  margin-top: 270px;
+  background-color: #a6a6a6;
+  border-radius: 130px;
+  transform: rotate(45deg);
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.waveAnimation2{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-right: 380px;
+  margin-top: 270px;
+  background-color: #808080;
+  border-radius: 130px;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.wave1{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-right: 310px;
+  margin-top: 270px;
+  background-color: #a6a6a6;
+  border-radius: 130px;
+  animation: 5s infinite linear wave1;
+  z-index: 2;
+}
+
+.wave2{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-right: 380px;
+  margin-top: 270px;
+  background-color: #808080;
+  border-radius: 130px;
+  animation: 10s infinite linear wave2;
+  z-index: 2;
+}
+
+@keyframes wave1{
+  0% {
+            transform: rotate(45deg);
+
+  }
+
+
+  100% {
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wave2{
+  0% {
+            transform: rotate(-180deg);
+
+  }
+
+
+  100% {
+            transform: rotate(360deg);
+  }
 }
