@@ -73,13 +73,14 @@ body{
 }
 
 .logInButton:focus{
+  transition: 0.5s;
   border: solid rgba(102, 179, 255, 0.1);
   border-width: medium;
 }
 
 .logInButton:hover{
   cursor: pointer;
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
   background-color: #3399ff;
 }
 
@@ -117,6 +118,7 @@ body{
   border-radius: 130px;
   animation: 9s infinite linear wave1;
   z-index: 2;
+  transition: 0.5s;
 }
 
 .wave2{
@@ -129,6 +131,17 @@ body{
   border-radius: 130px;
   animation: 16s infinite linear wave2;
   z-index: 2;
+  transition: 0.5s;
+}
+
+.blueHue1{
+  background-color: #3399ff;
+  transition: 0.5s;
+}
+
+.blueHue2{
+  background-color: #80bfff;
+  transition: 0.5s;
 }
 
 @keyframes wave1{
